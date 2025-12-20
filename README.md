@@ -3,6 +3,10 @@
 ## Tính năng chính
 - Bật/tắt thiết bị từ xa qua ứng dụng di động.
 - Theo dõi mức tiêu thụ năng lượng theo thời gian thực.
+## Thành viên
+- Thái Quang Minh - Mobile App
+- Ngọ Văn Sửu - Web App
+- Mai Văn Tiền - Phần cứng và Backend
 ## Các nhánh trong dự án
 - `main`: Giới thiệu dự án và các tài liệu liên quan
 - `hardware_backend`: Nhánh phát triển phần cứng và backend của ổ cắm thông minh.
