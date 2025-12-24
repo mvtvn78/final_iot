@@ -252,9 +252,12 @@ Lưu ý: các ví dụ trả về là JSON mẫu.
     - Nếu email không tồn tại:
 
 ```json
-{ "statusCode": 209, "data": { "message": "Send OTP Unsuccessful" } }
+{ "statusCode": 404, "data": { "message": "Send OTP Unsuccessful" } }
 ```
-
+    - Nếu email đã gửi rồi:
+```json
+{ "statusCode": 209, "data": { "message": "Send Request after 5 minutes" } }
+```  
 - PUT /user/password
 
     - Thay đổi mật khẩu cho user hiện tại.
