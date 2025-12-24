@@ -336,3 +336,9 @@ Lưu ý: `token` lấy từ khi đăng nhập.
 
 - Các ví dụ JSON ở trên là mẫu — thực tế có thể khác tuỳ cấu trúc trả về của API.
 - Nếu bạn muốn, mình có thể thêm ví dụ `curl` cho từng endpoint hoặc dịch sang English.
+# Luồng hoạt động các logic phức tạp
+## Quên mật khẩu
+- Yêu cầu gửi mã OTP từ POST /user/forgot
+- Nhận mã OTP từ email
+- Vào UI Reset Password truyền request PUT /user/forgot-password
+- Và phản hồi lại cho người dùng
