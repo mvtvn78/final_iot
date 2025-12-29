@@ -183,7 +183,19 @@ Lưu ý: các ví dụ trả về là JSON mẫu.
 ```
 
 ### User
-
+- GET /user
+    - Mô tả: lấy thông tin user đã đăng nhập
+    - Request Body: None
+- Response:
+```json
+{
+    "userId": 9,
+    "userName": "12g2tbtmvt",
+    "email": "12gt2btmvt@gmail.com",
+    "fullName": "Mai Văn Tiền",
+    "role": "user"
+}
+```
 - POST /user/register
 
     - Mô tả: Đăng ký user mới.
