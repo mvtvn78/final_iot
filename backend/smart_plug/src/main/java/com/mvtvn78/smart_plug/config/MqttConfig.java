@@ -39,6 +39,10 @@ public class MqttConfig {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
         options.setServerURIs(new String[] { brokerUrl });
+        options.setKeepAliveInterval(30); // ping 30s
+        options.setAutomaticReconnect(true); // reconnect
+        options.setCleanSession(false); // no topic subscriber
+        options.setConnectionTimeout(10);
 //        options.setUserName(userName);
 //        options.setPassword(password.toCharArray());
         factory.setConnectionOptions(options);
