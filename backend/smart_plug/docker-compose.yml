@@ -1,0 +1,27 @@
+services:
+  posgresql_service:
+    container_name: database
+    restart: always
+    image: 'postgres:13.1-alpine'
+    environment:
+      - POSTGRES_USER=compose-postgres
+      - POSTGRES_PASSWORD=compose-postgres
+    volumes:
+      - db:/data/db
+  spring_service:
+    container_name: spring
+    restart: always
+    build: .
+    ports:
+      - 1594:8080
+    depends_on:
+      - posgresql_service
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://posgresql_service:5432/compose-postgres
+      - SPRING_DATASOURCE_USERNAME=compose-postgres
+      - SPRING_DATASOURCE_PASSWORD=compose-postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_MAIL_USERNAME=
+      - SPRING.MAIL_PASSWORD=
+volumes:
+    db:

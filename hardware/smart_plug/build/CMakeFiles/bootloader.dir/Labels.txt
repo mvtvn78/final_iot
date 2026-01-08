@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+F:/Working/final_iot/hardware/smart_plug/build/CMakeFiles/bootloader
+F:/Working/final_iot/hardware/smart_plug/build/CMakeFiles/bootloader.rule
+F:/Working/final_iot/hardware/smart_plug/build/CMakeFiles/bootloader-complete.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+F:/Working/final_iot/hardware/smart_plug/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
